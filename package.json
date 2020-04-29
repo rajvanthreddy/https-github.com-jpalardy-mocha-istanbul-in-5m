@@ -5,9 +5,6 @@
   "scripts": {
     "test":     "mocha --reporter dot",
     "coverage": "nyc --reporter=lcov --reporter=text-lcov npm test"
-  },
-  
-  {
  
   "name": "continuous-test-code-coverage-guide",
   "scripts": {
