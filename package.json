@@ -6,6 +6,25 @@
     "test":     "mocha --reporter dot",
     "coverage": "nyc --reporter=lcov --reporter=text-lcov npm test"
   },
+  
+  
+  {
+  "name": "continuous-test-code-coverage-guide",
+  "scripts": {
+    "start": "webpack",
+    "test": "jest --coverage --coverageDirectory=output/coverage/jest"
+  },
+  ...
+  "jest": {
+    "coverageReporters": [
+      "text",
+      "cobertura"
+    ]
+    ...
+  }
+}
+  
+ 
   "author": "--",
   "license": "MIT",
   "devDependencies": {
